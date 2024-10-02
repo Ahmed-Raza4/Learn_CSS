@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="stylesheet" href="/font.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: goldenrod;
+            padding: 45px;
+            display: flex;
+        }
+        .card{
+            background-color: white;
+            width: 198px; 
+            border-radius: 7px;
+            padding: 0 0 34px 0;
+            margin: 4px;
+        }
+        .image{
+            padding: 5px;
+        }
+        .image img{
+            border-radius: 7px;
+
+        }
+        .capsules{
+            padding: 0 28px 0 14px;
+        }
+        .capsules span{
+            border: 1px solid black;
+            padding: 0  6px;
+            border-radius: 7px;
+            font-size: 8px;
+            font-family: 'Baloo Bhai 2', sans-serif; 
+        }
+        .contant{
+            padding: 7px 13px;
+            text-align: justify;
+        }
+        .contant p{
+            font-size: 12px;
+            color: grey;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            padding: 7px 15px;
+            border-radius: 15px;
+            background-color: rgb(216, 236, 253);
+            color: rgb(14, 150, 234);
+            font-size: 10px;
+            margin-top: 7px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .button button:hover{
+            background-color: rgb(194, 225, 246);
+            color: rgb(10, 136, 214);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="188px" src="https://www.boatlife.com/wp-content/uploads/sites/2/2016/08/water-surface-3728999_1920.jpg" alt="">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="contant">
+            <h2>Leak Diasaster</h2>
+            <p>One way is to simply remove water from the boat with a bucket and follow 
+                it to its source as the water levels die down. But if this isn't feasible, 
+                it's better to return to shore and lift the boat out of water 
+                for closer examination</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+        
+    </div>
+</body>
+</html>

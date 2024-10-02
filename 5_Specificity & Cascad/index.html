@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascad</title>
+    <style>
+        .cblue{
+            color: blue;
+        }
+        .cred{
+            color: red;
+        }
+        .cgreen{
+            color: green;
+        }
+        div{
+            color: red;
+        }
+        .one{
+            color: grey;
+        }
+        .one.two{
+            /* color: yellow; */
+        }
+        div.three.one{
+            color: mediumseagreen;
+        }
+        div.three.one:hover{
+            color: maroon;
+        }
+        span{
+            color: chocolate !important;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+Cascad Algorithim:-
+Position and order of appearance
+Specificity
+Origin
+Importance
+-->
+<!-- Effect of Position -->
+<p class="cred cblue cgreen">This is the example of effect of Position</p>
+
+<hr>
+
+<!-- Specificity -->
+<!-- 
+the order of specificity is:
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+Specificity Calculation:-
+To calculate specificity, assign a value to each part of the selector:
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+important: 10000
+-->
+
+<div class="one two three">This is the example of specificity </div>
+
+<hr>
+
+<!-- importance example -->
+ <span style="color: blueviolet;">This is the example: use inline style but in css style sheet use important keyword</span>
+</body>
+</html>

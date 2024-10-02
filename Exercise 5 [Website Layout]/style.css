@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100vw;
+    height: 12vh;
+    border: 1px solid lightyellow;
+    background: linear-gradient(to left, darkgoldenrod, rgb(167, 152, 71));
+    /* background-color: darkgoldenrod; */
+    outline: 2px solid black;
+    position: sticky;
+    top: 0px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+nav ul li{
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-family: 'Nerko One', cursive;
+    font-size: 28px;
+}
+nav ul li:hover{
+    color:darkgreen;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+.main{
+    width: 100vw;
+    height: 80vh;
+    background: linear-gradient(to bottom, rgb(219, 178, 178), rgb(11, 206, 115));
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+}
+.body{
+    height: 70vh;
+    width: 35vw;
+    top: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 32px;
+    color: rgb(223, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #21d4fd, #21ffa2);
+    box-shadow: 10px 10px 3px 0px rgba(117, 241, 154, 0.4);
+}
+.body:hover{
+    background: linear-gradient(to right, #2a8660, #1dcc48);
+    box-shadow: 10px 10px 3px 0px rgba(124, 21, 21, 0.4);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline;
+    color: #bacc1d;
+    transition: color 0.3s;
+}
+.logo-container {
+    position: fixed;  /* Fix the position */
+    bottom: 20px;     /* Distance from the bottom */
+    right: 20px;      /* Distance from the right */
+    z-index: 1000;    /* Ensure it stays on top of other elements */
+}
+.logo-container a img {
+    width: 50px;     /* Adjust the size of the logo */
+    height: auto;
+    opacity: 0.6;     /* Optional: Slight transparency */
+    transition: opacity 0.3s; /* Add a hover effect */
+}
+.logo-container a img:hover {
+    opacity: 1;       /* Full opacity on hover */
+    width: 80px;
+}
+.text{
+    border: 1px solid blue;
+    background-color: lightgreen;
+    width: 70vw;
+    height: 20vh;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-family: "Ubuntu", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    box-shadow: 4px 4px 3px 0px rgba(52, 214, 41, 0.753);
+}
+.text img{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 7px;
+}
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: aquamarine;
+    outline: 2px solid black;
+    bottom: 0px;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+}
+.instagram{
+    bottom: 20px;
+    right: 50px; 
+    z-index: 1000;
+}
+.instagram a img{
+    width: 50px;
+    height: auto;
+    opacity: 0.6;     
+    transition: opacity 0.3s
+}
+.instagram a img:hover{
+    opacity: 1;
+    width: 80px;
+}
+.facbook{
+    bottom: 20px;
+    right: 50px; 
+    z-index: 1000;
+}
+.facebook a img{
+    width: 50px;
+    height: auto;
+    opacity: 0.6;     
+    transition: opacity 0.3s
+}
+.facebook a img:hover{
+    opacity: 1;
+    width: 80px;
+}
+.linkedin{
+    bottom: 20px;
+    right: 50px; 
+    z-index: 1000;
+}
+.linkedin a img{
+    width: 50px;
+    height: auto;
+    opacity: 0.6;     
+    transition: opacity 0.3s
+}
+.linkedin a img:hover{
+    opacity: 1;
+    width: 80px;
+}
+

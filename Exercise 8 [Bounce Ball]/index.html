@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncel Ball</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        .text{
+            top: 50%;
+            left: 50%;
+            font-size: 36px;
+            font-family: 'Segoe UI';
+            font-weight: bold;
+            text-decoration: underline;
+            color: Blue;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            height: 60vh;
+            width: 85vw;
+            background-color: darkorange;
+            margin: auto;
+            border-radius: 15px;
+        }
+        .ball {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+ /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+            animation: BounceBall 5s linear 1s infinite alternate;
+        }
+
+        @keyframes BounceBall {
+            0%{
+                transform: translate(0);
+            }
+            20% {
+                transform: translateY(-40vh) translateX(15vw);
+                background-color: aqua;
+            }
+            40%{
+                transform: translateY(0vh) translateX(30vw);
+                background-color: bisque;
+            }
+            60%{
+                transform: translateY(-40vh) translateX(45vw);
+                background-color: chartreuse;
+            }
+            80%{
+                transform: translateY(0vh) translateX(60vw);
+                background-color: pink;
+            }
+            100%{
+                transform: translateY(-40vh) translateX(75vw);
+                background-color: rgb(46, 24, 24);
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="text">
+        Exercise # 8: Bounce Ball
+    </div>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>

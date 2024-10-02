@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 [Multicolor Nav Bar]</title>
+    <style>
+        :root{
+            --color: rgb(92, 137, 204);
+            --bold: bold;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        nav{
+            background-color: brown;
+            height: 10vh;
+            width: 100vw;
+            transition: background-color 0.3s;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        nav ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            font-size: 24px;
+            padding: 4px;
+            margin: 20px;  
+            display: flex;
+            transition: color 0.3s;
+        }
+        .navbar:hover{
+            background-color: rgb(29, 47, 82);
+        }
+
+        nav ul li a:hover{
+            color: var(--color);
+            font-weight: var(--bold);
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav">
+            <li><a href="https://www.linkedin.com/in/iahmedraza4/">My LinkedIn</a></li>
+            <li><a href="https://github.com/Ahmed-Raza4">My GitHub</a></li>
+            <li><a href="https://www.facebook.com/iAhmedRaza4">My Facebook</a></li>
+            <li><a href="https://www.instagram.com/i_ahmedraza4/">My Instagram</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

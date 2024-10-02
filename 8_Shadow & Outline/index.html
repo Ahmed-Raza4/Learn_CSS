@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow & Outline</title>
+    <style>
+        .box{
+            border: 2px solid burlywood;
+            box-shadow:  5px 5px 2px 1px #328b65;
+            width: 40vw;
+            display: inline
+        }
+        .box1{
+            border: 2px solid rgb(22, 211, 22);
+            box-shadow:  inset -2px -2px 1px 0px #7eb2e4;
+            width: 40vw;
+            display: inline;
+            margin: 60px
+        }
+        p{
+            border: 1px solid #417c4d;
+            text-shadow: 3px 2px 1px #cd9999;
+            background-color: aqua;
+        }
+        .outline{
+            border: 2px solid #7c4144;
+            margin: auto;
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            outline: 1.5px solid rgb(218, 209, 209);
+        }
+    </style>
+</head>
+<body>
+<!--
+Box Shadow Syntax: h-offset v-offset blur spread color inset
+{h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner.}
+
+text-shadow Sytax: h-offset v-offset blur color;
+outline Syntax: width style color;
+-->
+
+<div class="box">This is a box to check box outline shadow</div>
+
+<div class="box1">This is a box to check box inline shadow</div>
+<hr>
+<p>This is a paragraph to check and explore text outline</p>
+<hr>
+<div class="outline">This is box to check and explore outline on the box</div>
+</body>
+</html>

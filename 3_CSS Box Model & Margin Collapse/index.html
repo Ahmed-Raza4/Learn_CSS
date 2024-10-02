@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        p{
+            border: 1px solid blue;
+            width: 300px;
+            height: 50ox;
+
+        }
+        .box1{
+            width: 200px;
+            height: 150px;
+            padding: 15px;
+            border: 1px solid black;
+            margin: 5px;
+            background-color: aqua;
+            box-sizing: border-box;
+        }
+        .box2{
+            width: 200px;
+            height: 150px;
+            padding: 5px;
+            margin: 3px;
+            border: 1px solid black;
+            color: yellow;
+            background-color: brown;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<!-- 
+contant
+padding
+border
+marging
+
+Calculate the total dimension of the element
+The total width and height of the element is calculated with the formula:
+
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin
+-->
+
+<p>My Name is Ahmed Raza</p>
+<hr>
+<div class="box box1">This is a box</div>
+<div class="box box2">This is another box</div>
+
+<hr>
+<!-- Margin collapse -->
+
+<p style="margin: 25px;">
+    The margin collapse occurs when two or more adjacent elements have a margin. The margin of the first element is ignored, and the margin of the second element is added to the top margin of the first element.
+</p>
+
+<p>
+    <span style="display: block; margin: 10px; border: 1px solid red;">This is a span</span>
+    <span style="display: block; margin: 20px; border: 1px solid red;">This is another span</span>
+</p>
+
+</body>
+</html>
+
+

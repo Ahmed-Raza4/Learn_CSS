@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FR Unit</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            border: 1px solid black;
+            width: 90vw;
+            height: 80vh;
+            margin: 20px auto;
+            background-color:cornflowerblue;
+            text-align: center;
+        }
+        h1{
+            color: whitesmoke;
+            font-size: 30px;
+            margin-top: 10px;
+            font-size: 48px;
+            text-decoration: underline;
+        }
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            height: 60vh;
+            margin: 20px auto !important;
+            background-color:antiquewhite;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px 10px /*row-gap then column-gap*/;
+            justify-content: center;
+            /* align-content:center; */
+        }
+        .items{
+            border: 1.5px solid blue;
+            /* width: 80px; */
+            /* width: 80px; */
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica;
+            font-weight: bold;
+        }
+        .item-1{
+            height: 150px;
+            background-color: chocolate;
+            color: white;
+        }
+        .item-2{
+            height: 180px;
+            background-color: rgb(207, 210, 30);
+            color: rgb(245, 28, 28);
+        }
+        .item-3{
+            height: 180px;
+            width: 150px;
+            background-color: rgb(30, 210, 201);
+            color: black !important;
+        }
+        .item-4{
+            height: 180px;
+            width: 150px;
+            background-color: rgb(33, 30, 210);
+            color: whitesmoke;
+            align-self: center;
+            justify-self: center;
+        }
+        .item-5{
+            height: 100px;
+            width: 300px;
+            background-color: rgb(30, 210, 135);
+            color: black;
+            align-self: center;
+            justify-self:flex-start
+        }
+        .item-6{
+            height: 160px;
+            width: 200px;
+            background-color: rgb(210, 30, 135);
+            color: black;
+            align-self: center;
+            justify-self:flex-start
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <H1>Display Grid with FR Unit</H1>
+    <div class="container">
+        <div class="items item-1">Box 1 with column width 1fr and box height 150px.  </div>
+        <div class="items item-2">Box 2 with column width 2fr and box height 180px.  </div>
+        <div class="items item-3">Box 3 with column width 1fr, box width 150px and height 100px.  </div>
+        <div class="items item-4">Box 4 with column width 1fr, box width 150px and height 100px with self justify and align property</div>
+        <div class="items item-5">Box 5 with column width 2fr, box width 300px and height 100px with self justify and align property</div>
+        <div class="items item-6">Box 5 with column width 1fr, box width 200px and height 160px with self justify and align property</div>
+    </div>
+</div>
+</body>
+</html>

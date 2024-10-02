@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        /* div {
+            background-color: aquamarine;
+        } */
+        /* class selector */
+        .oneselector{
+            color: brown;
+        }
+        /* id selector */
+        #idselector {
+            font-size: x-large;
+        }
+        /* child selector */
+        span > p {
+            font-weight: bold;
+            color: blueviolet;
+        }
+        /* descendant selector */
+        div p {
+            font-style: italic;
+            color: green;
+        }
+        /* universal selector */
+        *{
+            margin:0%;
+            padding:10px;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color:gray
+        }
+        a:link{
+            color: orange;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>Most commenly used css selectors are here....</h2>
+    <div>
+        <ul>
+            <li>element selector</li>
+            <li class="oneselector">class selector</li>
+            <li id="idselector">id selector</li>
+            <li>child selector</li>
+            <li>descendant selector</li>
+            <li>universal selector</li>
+            <li>Pseudo selector</li>
+        </ul>
+    </div>
+
+    <span>
+        <p>i'm paragraph inside div</p>
+    </span>
+
+    <div><article><p>
+        <p>i'm paragraph inside article</p>
+        <p>i'm another paragraph inside article</p>
+    </p></article></div>
+
+<a href="https://www.google.com">Go to Google</a>
+<a href="https://www.facebook.com">Go to facebook</a>
+
+<div>
+    <p>1st child</p>
+    <p>2nd child</p>
+</div>
+
+</body>
+</html>

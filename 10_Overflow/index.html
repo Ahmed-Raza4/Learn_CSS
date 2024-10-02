@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css overflow</title>
+    <style>
+        .box{
+            border: 1.5px solid blue;
+            width: 30vw;
+            height: 30vh;
+            font-size: 20px;
+            /* overflow: scroll; */
+            /* white-space: nowrap; */
+            /* overflow: clip; */
+            overflow: auto scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        When working with web layouts, managing content that 
+        exceeds the boundaries of its container is essential. 
+        The overflow property in CSS is a powerful tool for 
+        this purpose. It controls what happens to content that 
+        is too large to fit within a given area. By using 
+        values such as visible, hidden, scroll, and auto, 
+        developers can decide whether to clip the overflowing
+        content, provide scrollbars, or simply allow it to
+        spill out of its container. Understanding how to 
+        effectively use overflow is crucial for creating 
+        responsive and user-friendly designs, especially 
+        when dealing with dynamic content or complex layouts
+    </div>
+</body>
+</html>

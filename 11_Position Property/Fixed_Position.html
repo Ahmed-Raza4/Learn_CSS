@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Posittion Property</title>
+    <style>
+      .parent {
+        border: 3px solid peru;
+      }
+      .box {
+        border: 2px solid black;
+        height: 40vh;
+        width: 90vw;
+        padding: 20px;
+        margin: 15px;
+      }
+      .box1 {
+        background-color: aqua;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+        height: 10px;
+        position: sticky;
+        top: 5%;
+      }
+      .box2 {
+        background-color: burlywood;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+      }
+      .box3 {
+        background-color: rgb(212, 175, 162);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+        font-size: large;
+        position: fixed;
+        top: 50%;
+        left: 2%;
+        height: 10vh;
+        width: 20vw;
+      }
+      .box4 {
+        background-color: darkgoldenrod;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">Sticky Position</div>
+      <div class="box box2">Static Position</div>
+      <div class="box box3">This is Fixed Position</div>
+      <div class="box box4">Static Position</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Local Variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .main{
+        width: 70vw;
+        margin: auto;
+        text-align: center;
+        border: 2px dotted blue;
+    }
+    h1{
+        color: saddlebrown;
+        text-decoration: underline;
+    }
+    .local{
+        --background-color: grey;
+        --color: chocolate;
+        --padding: 5px 7px;
+        --border: 1px solid black;
+    }
+    h2, h3{
+        color: var(--color);
+        text-decoration: underline;
+    }
+    p{
+        padding: var(--padding);
+        border: var(--border);
+        background-color: var(--background-color);
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>This is the Example of Local Variable</h1>
+    <div class="local">
+        <h2>Div 1</h2>
+        <p>This is div, used local color, border and padding.</p>
+        <h3>Div 2</h3>
+        <p>This is another div, used local color, border and padding.</p>
+    </div>
+</div>
+</body>
+</html>

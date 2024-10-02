@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 20vh;
+            font-style: italic;
+            text-align: center;
+            margin: auto;
+            background: azure;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 60vh;
+            font-size: 12px;
+            margin: 30px auto;
+            background: lightpink;
+        }
+        .container > p{
+            font-size: 2em;
+        }
+        .mycont{
+            background: lightyellow;
+            color: brown;
+            font-size: 20px;
+            width: 80vmax;
+            border: 1.5px solid blue;
+            margin: auto;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--unit px, vw, vh, em, rem,vmin, vmax, & -->
+     <div class="box">This is the simple box</div>
+    <div class="container"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Facere nisi itaque labore odio, quidem omnis mollitia sapiente sunt provident explicabo. 
+        Expedita, eius. Voluptate odio temporibus accusantium aperiam, possimus ad nesciunt dolore tempora 
+        molestias delectus placeat ipsum enim. Cum aliquam, perferendis iure, est ut excepturi atque,
+         molestias doloribus porro eaque ducimus.</p></div>
+    <div class="mycont">I am another container of this page</div>
+</body>
+</html>

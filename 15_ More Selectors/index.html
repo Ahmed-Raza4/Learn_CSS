@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS More Selectors</title>
+    <Style>
+        /* Selecting all elements with class "box" */
+        .box {
+            height: 60px;
+            width:60vw;
+            border: 2px solid black;
+            margin: auto;
+            padding: 5px;
+            text-align: center;
+            font-size: 24px;
+            overflow: auto;
+        }
+        .box:first-child{
+            background-color: lightgray;
+            font-weight: bold;
+            color: blueviolet;
+        }
+        .box2:first-line{
+            color: red;
+            font-weight: bolder;
+        }
+        [data-type="string"]{
+            color: green;
+            font-style: italic;
+            font-size: 28px;
+        }
+        .box:nth-child(4){
+            background-color: rgb(192, 192, 98);
+            color: black;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(133, 228, 25, 0.685);
+        }
+        /* Before and After Selector */
+        .boxes:before{
+            content: "CSS More Selector is here....";
+            font-size: 32px;
+            font-weight: bold !important;
+            color: chocolate;
+            display: flex;
+            justify-content: center;
+        } 
+        .boxes:after{
+            content: "This is the end.";
+            font-size: 32px;
+            font-weight: bold;
+            color: chocolate;
+            display: flex;
+            justify-content: center;
+        }
+        /* Selection Element */
+        ::selection{
+            background-color: yellow;
+            color: black;
+            text-decoration: underline;
+        }
+        /* First Letter Element */
+        .box::first-letter{
+            color: darkmagenta;
+            font-size: 48px;
+        }
+        
+    </Style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box1">First Child Selector</div>
+        <div class="box box2" style="height: 80px;">First Line Selector.<br> Lorem ipsum dolor sit amet
+             consectetur adipisicing elit. Provident alias perspiciatis 
+             impedit eligendi, incidunt quaerat officia
+              obcaecati sint sunt quos laudantium voluptatum 
+              maxime libero eius porro ipsum quae ratione ea!</div>
+        <div class="box box3" data-type="string">Attribute Selector</div>
+        <div class="box box4">nth:child Seletor</div>
+        <div class="box box5">nth:child Seletor</div>
+    </div>
+</body>
+</html>

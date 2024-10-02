@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid brown;
+        margin: 2px;
+        width: 40vw;
+        /* display: inline; */
+        display: inline-block;
+      }
+      .box1 {
+        /* display: none; */
+        /* visibility: hidden; */
+        display: flex;
+        justify-content: center;
+      }
+      .box2 {
+        width: 60vw;
+      }
+      div > p {
+        font-size: 24px;
+        font-family: "Qwitcher Grypen", cursive;
+        font-style: italic;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+    
+      }
+        .one {
+            border: 1px solid blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">This is a box, i use div container</div>
+    <div class="box box2"><p>This is another box in container</p></div>
+    <span class="one">Hi. this line writen in span tag</span>
+    <span>this is another line in span tag</span>
+  </body>
+</html>

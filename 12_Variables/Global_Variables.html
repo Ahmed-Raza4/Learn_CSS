@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Globale Variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Defined global variables */
+        :root{
+            --pricolor: green;
+            --priborder: 2px solid red;
+            --pripadding: 10px;
+            --seccolor: rgb(73, 64, 11);
+            --secborder: 3px dashed blue;
+            --secpadding: 15px;
+        }
+        .global{
+            border: 3px solid black;
+            background-color:rgb(171, 221, 204);
+            width: 80vw;
+            margin: auto;
+        }
+        .global > h1{
+            text-align: center;
+        }
+        .primary> h2 , .secondary>h3{
+            text-align: center;
+        }
+        .primary > p{
+            width: 70vw;
+            margin: auto;
+            text-align: center;
+            color: var(--pricolor);
+            border: var(--priborder);
+            padding: var(--pripadding);
+        }
+        .secondary > p{
+            width: 70vw;
+            margin: auto;
+            text-align: center;
+            color: var(--seccolor);
+            border: var(--secborder);
+            padding: var(--secpadding);
+        }
+    </style>
+</head>
+<body>
+    <div class="global">
+        <h1>This is the Example of Global Variable</h1>
+    <div class="primary">
+        <h2>Primary Div</h2>
+        <p>This is primary div, used primary color, border and padding.</p>
+    </div>
+    <div class="secondary">
+        <h3>Secondary Div</h3>
+        <p>This is Secondary div, used secondary color, border and padding.</p>
+    </div>
+</div>
+</body>
+</html>

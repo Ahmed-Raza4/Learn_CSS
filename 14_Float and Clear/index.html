@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        *{
+            padding:0;
+            margin-top:10px;
+        }
+        /* Float property */
+       .cards {
+        border: 2px solid blue;
+        width: 60vw;
+        margin:auto
+       }
+       .cards > h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: chocolate;
+       }
+       .card{
+        border: 1px solid brown;
+        margin: 10px;
+        min-height: 100px;
+        font-size: 24px;
+       }
+       .card B2{
+        clear: both;
+       }
+       img{
+        float: right;
+       }
+       .B1{
+        background-color: lightblue;
+       }
+       .B2{
+        background-color: rgb(173, 230, 178);
+       }
+       .B3{
+        background-color: rgb(209, 173, 230);
+       }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <h2>Float and Clear Concepts</h2>
+        <div class="card B1">
+            <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/12/directionalclearing.png?resize=540%2C226&ssl=1" alt="" height="250px">
+            <div>Box 1</div> <div>Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. Corrupti odio 
+            voluptate alias accusamus debitis inventore. Consequatur 
+            ut ipsum dolorum soluta.</div> </div>
+        <div class="card B2"><div>Box 2</div> <div>Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. Corrupti odio 
+            voluptate alias accusamus debitis inventore. Consequatur 
+            ut ipsum dolorum soluta.</div></div>
+        <div class="card B3"><div>Box 3</div> <div>Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. Corrupti odio 
+            voluptate alias accusamus debitis inventore. Consequatur 
+            ut ipsum dolorum soluta.</div></div>
+    </div>
+</body>
+</html>

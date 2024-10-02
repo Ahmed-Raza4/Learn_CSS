@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posittion Property</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid black;
+        height: 100px;
+        width: 90vw;
+        padding: 20px;
+        margin: 15px;
+      }
+      .box1 {
+        background-color: aqua;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+      }
+      .box2 {
+        background-color: burlywood;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+        position: relative;
+        top: -40px;
+        left: 12%;
+      }
+      .box3 {
+        background-color: coral;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+        position: relative;
+        z-index: 1;
+      }
+      .box4 {
+        background-color: darkgoldenrod;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI";
+        position: relative;
+        top: -40px;
+        left: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Static Position</div>
+    <div class="box box2">Relative Position</div>
+    <div class="box box3">Static Position</div>
+    <div class="box box4">Relative Position {with Z-index}</div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aquamarine;
+        }
+        .text{
+            text-align: center;
+            color:chocolate;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-style: dotted;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items:self-start;
+            gap: 15px;
+            height: 100vh;
+        }
+        .container{
+            width: 12vw;
+            height: 38vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .img1{
+            border-radius: 5px;
+            filter: blur(3px);
+        }
+        .img2{
+            border-radius: 5px;
+            filter:brightness(125%);
+        }
+        .img3{
+            border-radius: 5px;
+            filter:contrast(200%)
+        }
+        .img4{
+            border-radius: 5px;
+            filter:drop-shadow(5px 5px 10px lightgreen);
+        }
+        .img5{
+            border-radius: 5px;
+            filter:sepia(50%)
+        }
+        .img6{
+            border-radius: 5px;
+            filter:opacity(0.5)
+        }
+        .img7{
+            border-radius: 5px;
+            filter:hue-rotate(45deg)
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>CSS Filters Property Test</h1>
+    </div>
+    <div class="main">
+    <div class="container">
+        <img class="img1" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+    <div class="container">
+        <img class="img2" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+    <div class="container">
+        <img class="img3" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+    <div class="container">
+        <img class="img4" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+    <div class="container">
+        <img class="img5" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+    <div class="container">
+        <img class="img6" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+    <div class="container">
+        <img class="img7" src="https://img.freepik.com/free-photo/dreamy-children-s-day-celebration_23-2151435972.jpg" alt="" width="150px">
+    </div>
+</div>
+</body>
+</html>

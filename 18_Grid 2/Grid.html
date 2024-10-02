@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main{
+            border: 2px solid rebeccapurple;
+            background-color:bisque
+        }
+        .head{
+            text-align: center;
+            font-family:'Lucida Sans Unicode';
+            text-decoration: underline;
+        }
+        .container {
+            border: 1px solid black;
+            width: 80vw;
+            height: 50vh;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                "side main main"
+                                    "footer footer footer";
+            background-color: beige;
+            margin: 10px auto;
+        }
+        .item{
+            border: 1px solid black;
+            height: 80px;        }
+        .item1{
+            grid-area: nav;
+            background-color: rgb(241, 148, 34);
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item2{
+            grid-area:side;
+            background-color: rgb(151, 241, 34);
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item3{
+            grid-area: main;
+            background-color: rgb(241, 148, 34);
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item4{
+            grid-area: main;
+            background-color: rgb(34, 227, 241);
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item5{
+            grid-area: footer;
+            background-color: rgb(148, 34, 241);
+            font-size: 24px;
+            font-family: 'Franklin Gothic Medium';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>    
+</head>
+<body>
+    <div class="main">
+    <div class="head">
+        <h1>Grid Items</h1>
+    </div>
+    <div class="container">
+        <div class="item item1">This Div in Navbar</div>
+        <div class="item item2">This is in Side Bar</div>
+        <div class="item item3"></div>
+        <div class="item item4">This is in Main Content Area</div>
+        <div class="item item5">This is the Footer of the Partictular Area</div>
+    </div>
+</div>
+</body>
+</html>

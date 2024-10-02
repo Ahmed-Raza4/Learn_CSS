@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color:antiquewhite;
+}
+h1{
+    text-align: center;
+    font-size: 44px;
+    font-family:'Franklin Gothic Medium';
+}
+.boxes{
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 0px;
+    margin: 0px;
+}
+.box{
+    width: 20%;
+    height: 20%;
+    background-color: lightsalmon;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.box1:hover{
+    transform: rotate(50deg);
+    transition:  1.5s;
+}
+.box2:hover{
+    transform: rotateX(40deg);
+    transition:  1.5s;
+}
+.box3:hover{
+    transform: rotateY(-40deg);
+    transition:  1.5s;
+}
+.box4:hover{
+    transform: scale(1.5);
+    transition:  1.5s;
+}
+.box5:hover{
+    transform: scaleY(1.5);
+    transition:  1.5s;
+}
+.box6:hover{
+    transform: scale3d(1.5, 2.5, 1.5);
+    transition:  1.5s;
+}
+.box7:hover{
+    transform: skew(10deg);
+    transition:  1.5s;
+}
+.box8:hover{
+    transform: skewX(10deg);
+    transition:  1.5s;
+}
+.box9:hover{
+    transform: skewY(10deg);
+    transition:  1.5s;
+}
+.box10:hover{
+    transform: translate(25%);
+    transition:  1.5s;
+}
+.box11:hover{
+    transform: translateY(25%);
+    transition:  1.5s;
+}
+.box12:hover{
+    transform: Translate(-20%) skewX(10deg) RotateX(30Deg);
+    transition:  1.5s;
+}
+

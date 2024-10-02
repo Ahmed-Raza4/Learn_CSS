@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-Fit and Object-Cover</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+        width: 600px;
+        height: 400px;
+        border: 1px solid black;
+        background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg);
+        }
+        .container img {
+            width: 550px;
+            height: 350px;
+            /* object-fit: cover; */
+            /* object-fit: scale-down; */
+            object-fit: contain;
+            border-radius: 30px;
+            object-position: bottom left;
+            
+        }
+        .container2 {
+        width: 600px;
+        height: 400px;
+        border: 1px solid black;
+        background-image: url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?cs=srgb&dl=pexels-pixabay-158827.jpg&fm=jpg);
+        background-position: center center;
+        background-size: contain;
+
+        }
+        .container2 img {
+            width: 550px;
+            height: 350px;
+            /* object-fit: cover; */
+            /* object-fit: contain; */
+            object-fit: scale-down;
+            object-position:bottom;
+            /* object-fit: fill; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/d2/6d/2a/d26d2aab2ff63cb48b3a91b0e8e0aa55.jpg" alt="">
+    </div>
+    <div class="container2">
+        <img src="https://i.pinimg.com/736x/d2/6d/2a/d26d2aab2ff63cb48b3a91b0e8e0aa55.jpg" alt="">
+    </div>
+</body>
+</html>

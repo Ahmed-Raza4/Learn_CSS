@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        body{
+            background-color:azure;
+        }
+        .mainbody{
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: crimson;
+            background-color:lightsalmon;
+            border-radius: 10px; 
+            width: 40vw;
+            margin: auto;
+            padding: 20px ;
+        }
+        .mainbody h1{
+            font-size: 48px;
+        }
+        .mainbody p{
+            font-size: 24px;
+            color: white;
+        }
+        .container{
+            width: 80vw;
+            height: 50vh;
+            background-color: aquamarine;
+            margin: auto;
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+        }
+        .box1{
+            background-color: lightcoral;
+            width: 50px;
+            height: 22px;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Segoe UI';
+            /* animation-name: MeriAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-in-out;     */
+            animation: MeriAnimation1 5s 4 ease-in-out;
+        }
+        .box2{
+            background-color:crimson;
+            width: 50px;
+            height: 22px;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Segoe UI';
+            /* animation-name: MeriAnimation2;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-out;  */
+            animation: MeriAnimation2 5s 4 ease-out;
+            
+        }
+        .box3{
+            background-color:darkorange;
+            width: 50px;
+            height: 22px;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Segoe UI';
+            /* animation-name: MeriAnimation3;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-timing-function: linear; */
+            /* animation-direction: alternate; */
+            animation: MeriAnimation3 5s 4 ease alternate;
+        }
+
+        @keyframes MeriAnimation1 {
+            0% {
+                transform: translateX(0px);
+            }
+            50% {
+                transform: translateX(70vw);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+        @keyframes MeriAnimation2 {
+            from{
+            background-color:crimson;
+            transform: translateX(0vw);
+           
+            }
+            to{
+            background-color:rgb(5, 244, 69);
+            color: white;
+            transform: translateX(70vw) rotate(360deg);
+
+            }
+        }
+        @keyframes MeriAnimation3{
+            from{
+                
+            }
+            to{
+                color: antiquewhite;
+                background-color:blue;
+                transform: scaleX(1.3) translateX(60vw) rotateY(45deg);
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainbody">
+        <h1>CSS Animations</h1>
+        <p>This page demonstrates CSS animations.</p>    
+    </div> 
+    <div class="container">
+        <div class="box1">
+            BOX1
+        </div>
+        <div class="box2">
+            BOX2
+        </div>
+        <div class="box3">
+            BOX3
+        </div>
+    </div>
+
+</body>
+</html>
